@@ -1,0 +1,15 @@
+default: &default
+  host: localhost
+  adapter: postgresql
+  username: <%= Rails.application.secrets.database_username %>
+  password: <%= Rails.application.secrets.database_password %>
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: bookmarks_dev
+
+test:
+  <<: *default
+  database: bookmarks_test
