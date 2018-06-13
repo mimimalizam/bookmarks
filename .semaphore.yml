@@ -22,11 +22,9 @@ blocks:
    build:
       jobs:
         - name: Job 1 from 2nd build block
-      # add random comment
           commands:
             - echo $SEMAPHORE_PIPELINE_ID
             - env
-# add random comment
  - name: Job 2 from 2nd build block
           commands:
             - echo $SEMAPHORE_PIPELINE_ID
