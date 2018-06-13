@@ -14,10 +14,10 @@ blocks:
         - name: Job 2 from 1st build block
 # add random comment
           commands:
-            - echo "This is #from the 2nd job of 1st build block"
             # add random comment
             - echo $SEMAPHORE_PIPELINE_ID
             - env
+            - sleep 60
  - name: Heyo This is another Block
    build:
       jobs:
