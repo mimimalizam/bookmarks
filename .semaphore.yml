@@ -12,7 +12,7 @@ blocks:
             - echo $SEMAPHORE_PIPELINE_ID
             - env
         - name: Job 2 from 1st build block
-          # add random comment
+# add random comment
           commands:
             - echo "This is from the 2nd job of 1st build block"
             # add random comment
@@ -25,7 +25,7 @@ blocks:
           commands:
             - echo $SEMAPHORE_PIPELINE_ID
             - env
- - name: Job 2 from 2nd build block
+        - name: Job 2 from 2nd build block
           commands:
             - echo $SEMAPHORE_PIPELINE_ID
             - env
