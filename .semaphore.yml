@@ -1,0 +1,16 @@
+version: "v3.0"
+name: Basic, 1 block YAML file example.
+semaphore_image: standard
+blocks:
+# Is this a valid comment?
+# Yes it is!
+ - name: This is Block
+   build:
+      jobs:
+        - name: Job 1 from 1st build block
+          commands:
+            - echo $SEMAPHORE_PIPELINE_ID
+        - name: Job 2 from 1st build block
+          commands:
+            - echo "This is from the 2nd job of 1st build block"
+            - echo $SEMAPHORE_PIPELINE_ID
