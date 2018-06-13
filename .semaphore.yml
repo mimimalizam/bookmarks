@@ -23,7 +23,7 @@ blocks:
       jobs:
         - name: Job 1 from 2nd build block
           commands:
-            - echo $SEMAPHORE_PIPELINE_ID
+            - echo $SEMAPHORE_PIPELINE_ID # comment
             - env
         - name: Job 2 from 2nd build block
           commands:
