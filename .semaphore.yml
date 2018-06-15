@@ -7,6 +7,7 @@ blocks:
  - name: This is Block
    build:
       jobs:
+        - name:
           commands:
             - echo $SEMAPHORE_PIPELINE_ID
             - env
