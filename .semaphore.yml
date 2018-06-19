@@ -12,18 +12,31 @@ blocks:
             - echo $SEMAPHORE_PIPELINE_ID
             - env
         - name: Job 2 from 1st build block
-# add random comment
           commands:
-            # add random comment
             - echo $SEMAPHORE_PIPELINE_ID
             - env
-            - sleep 60
+        - name: Job 3 from 1st build block
+          commands:
+            - echo $SEMAPHORE_PIPELINE_ID
+            - env
+        - name: Job 4 from 1st build block
+          commands:
+            - echo $SEMAPHORE_PIPELINE_ID
+            - env
+        - name: Job 5 from 1st build block
+          commands:
+            - echo $SEMAPHORE_PIPELINE_ID
+            - env
+        - name: Job 6 from 1st build block
+          commands:
+            - echo $SEMAPHORE_PIPELINE_ID
+            - env
  - name: Heyo This is another Block
    build:
       jobs:
         - name: Job 1 from 2nd build block
           commands:
-            - echo $SEMAPHORE_PIPELINE_ID # comment
+            - echo $SEMAPHORE_PIPELINE_ID
             - env
         - name: Job 2 from 2nd build block
           commands:
